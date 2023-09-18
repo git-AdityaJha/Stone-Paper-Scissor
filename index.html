@@ -1,26 +1,34 @@
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stone Paper Scissor</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <div class="container">
+      <h1>Stone Paper Scissor</h1>
+      <button class="btn stone">✊</button>
+      <button class="btn paper">🖐️</button>
+      <button class="btn scissor">✌️</button>
 
-<body>
+      <p class="result">Result</p>
+      <div class="turn">
+        <p class="you">You : ✊</p>
+        <p class="comp">Computer : ✊</p>
+      </div>
 
-  <div id="gameDiv">
-    <h1 class="gameText" id="playerText">Player:</h1>
-    <h1 class="gameText" id="computerText">Computer:</h1>
-    <h1 class="gameText" id="resultText">Result:</h1>
+      <div class="score">
+        <p class="wins">Wins: 0</p>
+        <p class="losses">Losses: 0</p>
+        <p class="ties">Ties: 0</p>
+      </div>
 
-    <button class="choiceBtn">ROCK</button>
-    <button class="choiceBtn">PAPER</button>
-    <button class="choiceBtn">SCISSOR</button>
-  </div>
+      <button class="reset">Reset Score</button>
+    </div>
 
-  <script src="index.js"></script>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
